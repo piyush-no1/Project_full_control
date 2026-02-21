@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Control | Futuristic UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0d59f2',
+            'cyan-neon': '#00f2ff',
+            'purple-neon': '#bc13fe',
+            'bg-dark': '#0a0f1a',
+            'bg-panel': '#0d121d',
+          },
+          fontFamily: {
+            sans: ['Space Grotesk', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      body {
+        @apply bg-bg-dark text-white overflow-hidden selection:bg-primary/30;
+      }
+    }
+    .neon-glow {
+      text-shadow: 0 0 10px rgba(13, 89, 242, 0.5), 0 0 30px rgba(13, 89, 242, 0.2);
+    }
+    .glass-panel {
+      @apply bg-bg-panel/60 backdrop-blur-xl border border-white/10;
+    }
+    .lightning-bg {
+      background: radial-gradient(circle at center, rgba(13, 89, 242, 0.2) 0%, #0a0f1a 100%);
+    }
+    .dot-pattern {
+      background-image: radial-gradient(rgba(13, 89, 242, 0.15) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    @keyframes lightning-thunder {
+      0%, 15%, 25%, 100% { opacity: 0; }
+      16% { opacity: 0.8; }
+      17% { opacity: 0.2; }
+      18% { opacity: 1; }
+      22% { opacity: 0; }
+    }
+    .lightning-flash {
+      animation: lightning-thunder 8s infinite;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

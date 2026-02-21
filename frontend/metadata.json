@@ -1,0 +1,8 @@
+{
+  "name": "Full Control - Futuristic Gesture Interface",
+  "description": "A high-end, futuristic multi-screen web application for gesture-based PC control, featuring a modular architecture for easy backend integration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
