@@ -1,0 +1,2 @@
+
+This is a web based application that understands the hand gesture to do certain tasks on the computer. The gestures are fully customisable and since the project uses an api key of a llm model it can generate codes for different tasks which make it convenient for the user to be able to do a wide variety of tasks on the computer using gestures. The product also has an option in which we can control the mouse pointer using out hands and perform clicks and dragging and dropping using hand actions.
